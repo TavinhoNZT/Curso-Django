@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Django</title>
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo ao meu aplicativo Django!</h1>
+    </header>
+
+    <section>
+        <h2>{{ mensagem }}</h2>
+        <p>Este é um exemplo básico de uma página Django.</p>
+    </section>
+
+    <section>
+        <h2>Lista de Itens:</h2>
+        <ul>
+            {% for item in itens %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meu App Django. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
